@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pokédex</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+
+  <div class="pokedex-container">
+    <div class="pokedex is-active">
+      <div class="pokedex-corner top left"></div>
+      <div class="pokedex-corner top right"></div>
+      <div class="pokedex-button" onclick="pokedexOpen()"></div>
+      <div class="pokedex-body">
+        <div class="pokedex-screen">
+          <div class="pokemon-screen-space top"></div>
+          <div class="list"></div>
+          <div class="pokemon-screen-space bottom"></div>
+        </div>
+      </div>
+      <div class="pokedex-corner bottom left"></div>
+      <div class="pokedex-corner bottom right"></div>
+    </div>
+    <div class="pokedex-close" onclick="pokedexClose()"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
